@@ -1,0 +1,10 @@
+# =======================
+# Form Behavior
+# =======================
+name: Multi Captcha
+form: $/vijaywilson/multicaptcha/models/multicaptcha/fields.yaml
+modelClass: VijayWilson\Multicaptcha\Models\MultiCaptcha
+
+update:
+  redirect: vijaywilson/multicaptcha/multicaptcha/update/:config_id
+  flashSave: Captcha configuration details has been saved successfully

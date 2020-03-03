@@ -1,0 +1,17 @@
+<div class="g-recaptcha" id="{{ __SELF__.id }}"></div>
+<div class="{{ g_recaptcha_error_style }} g_recaptcha_error_response" ></div>
+{% flash error %}
+    {% put scripts %}
+     <script type="text/javascript">
+        $(document).ready(function()
+        {
+            var json_str = '{{ message }}'.replace(/&quot;/g,'"');
+            var response = JSON.parse((json_str));
+            if(response.input_request != 'undefined' && response.input_request == 'g-recaptcha-response')
+            {
+                $.oc.flashMsg({text: response.message, 'class': 'error','interval':3}); return false;
+            }
+        });
+    </script>
+    {% endput %}
+{% endflash %}

@@ -1,0 +1,27 @@
+1.0.1: First version of MultiCaptcha
+1.0.2: 
+    - Create captcha details table and Seed a record
+    - create_vw_captcha_details_table.php
+    - seed_vw_captcha_details_table.php
+1.0.3: Replaced deprecated jQuery Ajax methods
+1.0.4: Improvements to jQuery script
+1.0.5: Removed language file, used for adding error messages and css classes
+1.0.6: Users have option in backend to add error messages and css classes
+1.1.0: RainLab translate plugin is integrated
+1.1.1: Error messages can be added for different languages
+1.2.1: Flash error responses for general html form submission
+1.2.2: RainLab translate plugin is not mandatory to install multicaptcha plugin
+1.2.3: Fixed Uncaught Exception - undefined property in jQuery script
+1.2.4: Auto generate unique id for reCaptcha components
+1.3.0: Fixed major security issue - bypass(remove) reCaptcha element
+1.3.1:
+    - Create multicaptcha page url table and page url handler table
+1.3.2: Google reCAPTCHA token verification with HTTP Post
+1.3.3:
+    - Remove multicaptcha page url table and page url handler table
+    - remove_vw_multicaptcha_page_urls_and_handlers.php
+1.3.4:
+    - Create multicaptcha page handlers table
+    - create_vw_multicaptcha_page_handlers.php
+1.3.5: Supports Rainlab translate plugin's - locale based urls and locale prefixed urls
+1.3.6: Translates reCAPTCHA widget to page's current locale

@@ -1,0 +1,77 @@
+# =========================
+# Fields
+# =========================
+tabs:
+    fields:    
+        site_key:
+            label: Site Key
+            type: text
+            span: left
+            required: true
+            tab: General Setting
+
+        secret_key:
+            label: Secret Key
+            type: text
+            span: left
+            required: true
+            tab: General Setting
+
+        reference_purpose:
+            label: Reference Purpose
+            type: section
+            span: left
+            tab: General Setting
+
+        label_name:
+            label: Label Name
+            type: text
+            span: left
+            comment: Optional (Label name registered for google reCaptcha API)
+            tab: General Setting
+
+        domain_address:
+            label: Domain Address
+            type: text
+            span: left
+            comment: Optional (Domain address registered for google reCaptcha API)
+            tab: General Setting
+
+        error_message_heading:
+            label: Customize Error Messages
+            type: section
+            span: left
+            tab: Error Setting
+
+        language_hint:
+            type: partial
+            span: left
+            path: $/vijaywilson/multicaptcha/controllers/multicaptcha/_language_hint.htm
+            tab: Error Setting
+
+        error_message_select_captcha:
+            type: text
+            span: left
+            label: Error Message for unselected captcha
+            required: true
+            tab: Error Setting
+
+        error_message_invalid_captcha:
+            type: text
+            span: left
+            label: Error Message for invalid captcha
+            required: true
+            tab: Error Setting
+
+        css_class_heading:
+            label: CSS Classes
+            type: section
+            span: left
+            tab: Error Setting
+
+        css_classes:
+            type: textarea
+            size: small
+            span: left
+            comment: Add custom css class for error messages. Class name should be separated by spaces
+            tab: Error Setting
